@@ -356,7 +356,7 @@ jobs:
           if [ "$OCI_SHAPE" != "VM.Standard.A1.Flex" ] ||
              [ "$OCI_OCPUS" != "2" ] ||
              [ "$OCI_MEMORY_GB" != "12" ] ||
-             [ "$OCI_BOOT_VOLUME_GB" != "100" ]; then
+             [ "$OCI_BOOT_VOLUME_GB" != "180" ]; then
 
             echo "::error::La configuración de seguridad de la VM ha sido modificada."
             exit 1
