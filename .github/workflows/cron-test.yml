@@ -1,0 +1,15 @@
+name: Cron Test
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "3-59/5 * * * *"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test schedule
+        run: |
+          echo "Cron ejecutado"
+          date -u
