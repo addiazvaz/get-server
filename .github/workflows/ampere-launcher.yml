@@ -6,7 +6,7 @@ on:
 
   # GitHub permite como mínimo una ejecución cada 5 minutos
   schedule:
-    - cron: "2-59/5 * * * *"
+    - cron: "2-59/1 * * * *"
 
 # Impide que dos ejecuciones intenten crear la VM simultáneamente
 concurrency:
